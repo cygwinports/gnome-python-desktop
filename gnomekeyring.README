@@ -43,13 +43,13 @@ This will create:
   /usr/src/gnome-python-desktop-2.20.0-X.tar.bz2
   /usr/src/python-bugbuddy-2.20.0-X.tar.bz2
   /usr/src/python-gnomeapplet-2.20.0-X.tar.bz2
-  /usr/src/python-gnomedesktop-2.20.0-X.tar.bz2
+  /usr/src/python-gnomedesktop2-2.20.0-X.tar.bz2
   /usr/src/python-gnomekeyring-2.20.0-X.tar.bz2
-  /usr/src/python-gnomeprint-2.20.0-X.tar.bz2
+  /usr/src/python-gnomeprint2-2.20.0-X.tar.bz2
   /usr/src/python-gtksourceview-2.20.0-X.tar.bz2
-  /usr/src/python-gtop-2.20.0-X.tar.bz2
+  /usr/src/python-gtop2-2.20.0-X.tar.bz2
   /usr/src/python-mediaprofiles-2.20.0-X.tar.bz2
-  /usr/src/python-rsvg-2.20.0-X.tar.bz2
+  /usr/src/python-rsvg2-2.20.0-X.tar.bz2
   /usr/src/python-totem-2.20.0-X.tar.bz2
   /usr/src/python-wnck-2.20.0-X.tar.bz2
 
