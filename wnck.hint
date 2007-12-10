@@ -1,0 +1,6 @@
+category: Gnome Python
+requires: cygwin glib2 gtk2-x11 libwnck1_22 python python-gobject2 python-gtk2
+external-source: gnome-python-desktop
+sdesc: "Python bindings for the GNOME libwnck library"
+ldesc: "Python bindings for the GNOME libwnck library"
+

@@ -1,0 +1,5 @@
+category: Gnome Python
+requires: cygwin glib2 gnome-panel gtk2-x11 libbonobo2 libbonoboui2 libgnome2 libgnomeui2 python python-bonobo2 python-gnome2 python-gobject2 python-gtk2
+external-source: gnome-python-desktop
+sdesc: "Python bindings for the GNOME panel applet library"
+ldesc: "Python bindings for the GNOME panel applet library"

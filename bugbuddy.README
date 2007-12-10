@@ -1,0 +1,71 @@
+python-bugbuddy
+------------------------------------------
+Python bindings for the GNOME bug reporter
+
+Runtime requirements:
+  bug-buddy-2.20.1-1
+  python-2.5.1-3
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.10-1.10-1
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.pygtk.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/gnome-python-desktop/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnome-python-desktop-2.20.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gnome-python-desktop-2.20.0-X.cygport all
+
+This will create:
+  /usr/src/gnome-python-desktop-2.20.0-X-src.tar.bz2
+  /usr/src/gnome-python-desktop-2.20.0-X.tar.bz2
+  /usr/src/python-bugbuddy-2.20.0-X.tar.bz2
+  /usr/src/python-gnomeapplet-2.20.0-X.tar.bz2
+  /usr/src/python-gnomedesktop-2.20.0-X.tar.bz2
+  /usr/src/python-gnomekeyring-2.20.0-X.tar.bz2
+  /usr/src/python-gnomeprint-2.20.0-X.tar.bz2
+  /usr/src/python-gtksourceview-2.20.0-X.tar.bz2
+  /usr/src/python-gtop-2.20.0-X.tar.bz2
+  /usr/src/python-mediaprofiles-2.20.0-X.tar.bz2
+  /usr/src/python-rsvg-2.20.0-X.tar.bz2
+  /usr/src/python-totem-2.20.0-X.tar.bz2
+  /usr/src/python-wnck-2.20.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/python2.5/site-packages/gtk-2.0/bugbuddy.py
+  /usr/lib/python2.5/site-packages/gtk-2.0/bugbuddy.pyc
+  /usr/lib/python2.5/site-packages/gtk-2.0/bugbuddy.pyo
+  /usr/share/doc/Cygwin/python-bugbuddy-2.20.0.README
+
+------------------
+
+Port Notes:
+
+----- version 2.20.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
