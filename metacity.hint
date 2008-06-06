@@ -1,0 +1,6 @@
+category: Gnome Python
+requires: cygwin glib2 gdk-pixbuf2 gtk2-x11 metacity python python-gobject2 python-gtk2
+external-source: gnome-python-desktop
+sdesc: "Python Metacity bindings"
+ldesc: "Python bindings for the libmetacity-private library"
+

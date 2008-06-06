@@ -1,17 +1,14 @@
-python-gtksourceview
+python-metacity
 ------------------------------------------
-Python bindings for the GNOME GtkSourceView library.
+Python bindings for the GNOME Metacity window manager.
 
 Runtime requirements:
   cygwin-1.5.25-11
   gdk-pixbuf2-2.12.9-1
   glib2-2.16.3-1
   gtk2-x11-2.12.9-1
-  gtksourceview-1.8.5-1
-  libgnomeprint22-2.18.4-1
-  pango-1.20.3-1
+  metacity-2.22.0-1
   python-2.5.2-1
-  python-gnomeprint2-2.22.0-1
   python-gobject2-2.14.2-1
   python-gtk2-2.12.1-1
 
@@ -66,23 +63,9 @@ This will create:
 
 Files included in the binary package:
 
-  /usr/lib/python2.5/site-packages/gtk-2.0/gtksourceview.dll
-  /usr/lib/python2.5/site-packages/gtk-2.0/gtksourceview.la
-  /usr/share/gtk-doc/html/pygtksourceview/class-gtksourcebuffer.html
-  /usr/share/gtk-doc/html/pygtksourceview/class-gtksourcelanguage.html
-  /usr/share/gtk-doc/html/pygtksourceview/class-gtksourcelanguagesmanager.html
-  /usr/share/gtk-doc/html/pygtksourceview/class-gtksourcemarker.html
-  /usr/share/gtk-doc/html/pygtksourceview/class-gtksourceprintjob.html
-  /usr/share/gtk-doc/html/pygtksourceview/class-gtksourcestylescheme.html
-  /usr/share/gtk-doc/html/pygtksourceview/class-gtksourcetag.html
-  /usr/share/gtk-doc/html/pygtksourceview/class-gtksourcetagstyle.html
-  /usr/share/gtk-doc/html/pygtksourceview/class-gtksourcetagtable.html
-  /usr/share/gtk-doc/html/pygtksourceview/class-gtksourceview.html
-  /usr/share/gtk-doc/html/pygtksourceview/gtksourcesview-class-reference.html
-  /usr/share/gtk-doc/html/pygtksourceview/index.html
-  /usr/share/gtk-doc/html/pygtksourceview/index.sgml
-  /usr/share/gtk-doc/html/pygtksourceview/pygtksourceview.devhelp
-  /usr/share/pygtk/2.0/defs/gtksourceview.defs
+  /usr/lib/python2.5/site-packages/gtk-2.0/metacity.dll
+  /usr/lib/python2.5/site-packages/gtk-2.0/metacity.la
+  /usr/share/pygtk/2.0/defs/metacity.defs
 
 ------------------
 
@@ -90,12 +73,6 @@ Port Notes:
 
 ----- version 2.22.0-1 -----
 Version bump for GNOME 2.22.
-
------ version 2.20.0-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.18.0-1 -----
-Version bump for GNOME 2.18, built for python-2.5.
 
 ----- version 2.16.0-1 -----
 Version bump for GNOME 2.16.
