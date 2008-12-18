@@ -1,5 +1,5 @@
 category: Gnome Python
-requires: cygwin glib2 libart_lgpl2 libgnomecanvas2 libgnomeprint22 libgnomeprintui22 python python-gnomecanvas2 python-gobject2 python-gtk2
+requires: cygwin libart_lgpl_2_2 libglib2.0_0 libgnomecanvas2_0 libgnomeprint2.2_0 libgnomeprintui2.2_0 python python-gnomecanvas2 python-gobject2 python-gtk2
 external-source: gnome-python-desktop
 sdesc: "Python bindings for the GNOME libgnomeprint(ui) libraries"
 ldesc: "Python bindings for the GNOME libgnomeprint(ui) libraries"

@@ -1,0 +1,39 @@
+inherit pygtk
+
+PATCH_URI="
+	2.22-ipv6.patch
+	2.24-libtool22.patch
+"
+
+PKG_NAMES="${PN}"
+gnome_python_desktop_CONTENTS="usr/lib/pkgconfig/ usr/share/doc/${P}/"
+
+for p in bugbuddy evolution gnomeapplet gnomedesktop gnomekeyring gnomeprint \
+         gtksourceview gtop mediaprofiles metacity rsvg totem-plparser wnck
+do
+	case ${p} in
+		gnomedesktop|gnomeprint|gtop|rsvg)	p2="${p}2" ;;
+		*)	p2="${p}" ;;
+	esac
+	PKG_NAMES+=" python-${p2}"
+	declare python_${p2/-/_}_CONTENTS="usr/share/doc/Cygwin/python-${p2}-${PV}.README
+	                                   ${PYTHON_SITELIB#/}/gtk-2.0/${p%-*}*"
+	case ${p} in
+		gnomeapplet)
+			declare python_${p2}_CONTENTS+=" ${PYTHON_SITELIB#/}/gtk-2.0/gnome/applet*" ;;
+		gtksourceview)
+			declare python_${p2}_CONTENTS+=" usr/share/gtk-doc/html/py${p}/" ;;
+		gnomeprint)
+			declare python_${p2}_CONTENTS+=" usr/share/gtk-doc/html/py${p}*/
+			                                 usr/share/pygtk/2.0/defs/art.defs" ;;
+	esac
+
+	case ${p} in
+		bugbuddy|gtop|rsvg|totem-plparser) ;;
+		evolution)	declare python_${p2}_CONTENTS+=" usr/share/pygtk/2.0/defs/ebook*" ;;
+		*)	declare python_${p2/-/_}_CONTENTS+=" usr/share/pygtk/2.0/defs/*${p#gnome}*" ;;
+	esac
+done
+
+
+CYGCONF_ARGS="--enable-metacity"

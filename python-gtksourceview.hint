@@ -1,5 +1,5 @@
 category: Gnome Python
-requires: cygwin gtk2-x11 gtksourceview libgnomeprint22 python python-gnomeprint2 python-gobject2 python-gtk2
+requires: cygwin libgtk2.0_0 libgtksourceview1.0_0 libgnomeprint2.2_0 python python-gnomeprint2 python-gobject2 python-gtk2
 external-source: gnome-python-desktop
 sdesc: "Python bindings for the GNOME GtkSourceView library"
 ldesc: "Python bindings for the GNOME GtkSourceView library"

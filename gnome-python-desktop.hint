@@ -1,0 +1,4 @@
+category: Gnome Python
+requires: python-bugbuddy python-gnomeapplet python-gnomedesktop2 python-gnomekeyring python-gnomeprint2 python-gtksourceview python-gtop2 python-mediaprofiles python-rsvg2 python-totem-plparser python-wnck 
+sdesc: "Python GNOME Desktop bindings (meta-package)"
+ldesc: "Python bindings for GNOME Desktop libraries"

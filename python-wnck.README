@@ -3,27 +3,27 @@ python-wnck
 Python bindings for the GNOME libwnck library.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  glib2-2.16.3-1
-  gtk2-x11-2.12.9-1
-  libwnck1_22-2.22.2-1
-  python-2.5.2-1
-  python-gobject2-2.14.2-1
-  python-gtk2-2.12.1-1
+  cygwin-1.5.25-15
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.5-1
+  libwnck1_22-2.24.2-1
+  python-2.5.2-4
+  python-gobject2-2.15.4-1
+  python-gtk2-2.13.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080523-1
-  cygport-0.3.11-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-2
-  gtk-doc-1.10-1
-  libtool-2.2.2-2
+  gnome-common-2.24.0-1
+  gtk-doc-1.11-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23-2
   sed-4.1.5-2
 
 Canonical website:
@@ -35,28 +35,28 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-python-desktop-2.22.0-X-src.tar.bz2
+  unpack gnome-python-desktop-2.24.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
      unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-python-desktop-2.22.0-X.cygport all
+  cygport ./gnome-python-desktop-2.24.0-X.cygport all
 
 This will create:
-  /usr/src/gnome-python-desktop-2.22.0-X-src.tar.bz2
-  /usr/src/gnome-python-desktop-2.22.0-X.tar.bz2
-  /usr/src/python-bugbuddy-2.22.0-X.tar.bz2
-  /usr/src/python-evolution-2.22.0-X.tar.bz2
-  /usr/src/python-gnomeapplet-2.22.0-X.tar.bz2
-  /usr/src/python-gnomedesktop2-2.22.0-X.tar.bz2
-  /usr/src/python-gnomekeyring-2.22.0-X.tar.bz2
-  /usr/src/python-gnomeprint2-2.22.0-X.tar.bz2
-  /usr/src/python-gtksourceview-2.22.0-X.tar.bz2
-  /usr/src/python-gtop2-2.22.0-X.tar.bz2
-  /usr/src/python-mediaprofiles-2.22.0-X.tar.bz2
-  /usr/src/python-metacity-2.22.0-X.tar.bz2
-  /usr/src/python-rsvg2-2.22.0-X.tar.bz2
-  /usr/src/python-totem-2.22.0-X.tar.bz2
-  /usr/src/python-wnck-2.22.0-X.tar.bz2
+  /usr/src/gnome-python-desktop-2.24.0-X-src.tar.bz2
+  /usr/src/gnome-python-desktop-2.24.0-X.tar.bz2
+  /usr/src/python-bugbuddy-2.24.0-X.tar.bz2
+  /usr/src/python-evolution-2.24.0-X.tar.bz2
+  /usr/src/python-gnomeapplet-2.24.0-X.tar.bz2
+  /usr/src/python-gnomedesktop2-2.24.0-X.tar.bz2
+  /usr/src/python-gnomekeyring-2.24.0-X.tar.bz2
+  /usr/src/python-gnomeprint2-2.24.0-X.tar.bz2
+  /usr/src/python-gtksourceview-2.24.0-X.tar.bz2
+  /usr/src/python-gtop2-2.24.0-X.tar.bz2
+  /usr/src/python-mediaprofiles-2.24.0-X.tar.bz2
+  /usr/src/python-metacity-2.24.0-X.tar.bz2
+  /usr/src/python-rsvg2-2.24.0-X.tar.bz2
+  /usr/src/python-totem-plparser-2.24.0-X.tar.bz2
+  /usr/src/python-wnck-2.24.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -69,6 +69,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.24.0-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.22.0-1 -----
 Version bump for GNOME 2.22.
