@@ -4,13 +4,13 @@ Python bindings for the GNOME GtkSourceView library.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libgdk_pixbuf2.0_0-2.14.5-1
+  libgdk_pixbuf2.0_0-2.14.6-1
   libglib2.0_0-2.18.3-1
   libgnomeprint2.2_0-2.18.5-1
-  libgtk2.0_0-2.14.5-1
+  libgtk2.0_0-2.14.6-1
   libgtksourceview1.0_0-1.8.5-1
-  libpango1.0_0-1.22.3-1
-  python-2.5.2-4
+  libpango1.0_0-1.22.4-1
+  python-2.5.4-1
   python-gnomeprint2-2.24.0-1
   python-gobject2-2.15.4-1
   python-gtk2-2.13.0-1
@@ -38,28 +38,28 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-python-desktop-2.24.0-X-src.tar.bz2
+  unpack gnome-python-desktop-2.24.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
      unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-python-desktop-2.24.0-X.cygport all
+  cygport ./gnome-python-desktop-2.24.1-X.cygport all
 
 This will create:
-  /usr/src/gnome-python-desktop-2.24.0-X-src.tar.bz2
-  /usr/src/gnome-python-desktop-2.24.0-X.tar.bz2
-  /usr/src/python-bugbuddy-2.24.0-X.tar.bz2
-  /usr/src/python-evolution-2.24.0-X.tar.bz2
-  /usr/src/python-gnomeapplet-2.24.0-X.tar.bz2
-  /usr/src/python-gnomedesktop2-2.24.0-X.tar.bz2
-  /usr/src/python-gnomekeyring-2.24.0-X.tar.bz2
-  /usr/src/python-gnomeprint2-2.24.0-X.tar.bz2
-  /usr/src/python-gtksourceview-2.24.0-X.tar.bz2
-  /usr/src/python-gtop2-2.24.0-X.tar.bz2
-  /usr/src/python-mediaprofiles-2.24.0-X.tar.bz2
-  /usr/src/python-metacity-2.24.0-X.tar.bz2
-  /usr/src/python-rsvg2-2.24.0-X.tar.bz2
-  /usr/src/python-totem-plparser-2.24.0-X.tar.bz2
-  /usr/src/python-wnck-2.24.0-X.tar.bz2
+  /usr/src/gnome-python-desktop-2.24.1-X-src.tar.bz2
+  /usr/src/gnome-python-desktop-2.24.1-X.tar.bz2
+  /usr/src/python-bugbuddy-2.24.1-X.tar.bz2
+  /usr/src/python-evolution-2.24.1-X.tar.bz2
+  /usr/src/python-gnomeapplet-2.24.1-X.tar.bz2
+  /usr/src/python-gnomedesktop2-2.24.1-X.tar.bz2
+  /usr/src/python-gnomekeyring-2.24.1-X.tar.bz2
+  /usr/src/python-gnomeprint2-2.24.1-X.tar.bz2
+  /usr/src/python-gtksourceview-2.24.1-X.tar.bz2
+  /usr/src/python-gtop2-2.24.1-X.tar.bz2
+  /usr/src/python-mediaprofiles-2.24.1-X.tar.bz2
+  /usr/src/python-metacity-2.24.1-X.tar.bz2
+  /usr/src/python-rsvg2-2.24.1-X.tar.bz2
+  /usr/src/python-totem-plparser-2.24.1-X.tar.bz2
+  /usr/src/python-wnck-2.24.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -86,6 +86,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.24.1-1 -----
+Version bump.
 
 ----- version 2.24.0-1 -----
 Version bump for GNOME 2.24.

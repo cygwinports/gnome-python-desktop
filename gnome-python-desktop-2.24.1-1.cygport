@@ -2,7 +2,6 @@ inherit pygtk
 
 PATCH_URI="
 	2.22-ipv6.patch
-	2.24-libtool22.patch
 "
 
 PKG_NAMES="${PN}"
