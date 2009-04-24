@@ -3,25 +3,26 @@ python-rsvg2
 Python bindings for LibRSVG-2.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libglib2.0_0-2.18.3-1
-  librsvg2_2-2.22.3-1
-  python-2.5.4-1
-  python-gobject2-2.15.4-1
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.1-1
+  librsvg2_2-2.26.0-1
+  python-2.5.4-10
+  python-gobject2-2.16.1-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  gtk-doc-1.11-1
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  gtk-doc-1.11-2
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -33,28 +34,28 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-python-desktop-2.24.1-X-src.tar.bz2
+  unpack gnome-python-desktop-2.26.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
      unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-python-desktop-2.24.1-X.cygport all
+  cygport ./gnome-python-desktop-2.26.0-X.cygport all
 
 This will create:
-  /usr/src/gnome-python-desktop-2.24.1-X-src.tar.bz2
-  /usr/src/gnome-python-desktop-2.24.1-X.tar.bz2
-  /usr/src/python-bugbuddy-2.24.1-X.tar.bz2
-  /usr/src/python-evolution-2.24.1-X.tar.bz2
-  /usr/src/python-gnomeapplet-2.24.1-X.tar.bz2
-  /usr/src/python-gnomedesktop2-2.24.1-X.tar.bz2
-  /usr/src/python-gnomekeyring-2.24.1-X.tar.bz2
-  /usr/src/python-gnomeprint2-2.24.1-X.tar.bz2
-  /usr/src/python-gtksourceview-2.24.1-X.tar.bz2
-  /usr/src/python-gtop2-2.24.1-X.tar.bz2
-  /usr/src/python-mediaprofiles-2.24.1-X.tar.bz2
-  /usr/src/python-metacity-2.24.1-X.tar.bz2
-  /usr/src/python-rsvg2-2.24.1-X.tar.bz2
-  /usr/src/python-totem-plparser-2.24.1-X.tar.bz2
-  /usr/src/python-wnck-2.24.1-X.tar.bz2
+  /usr/src/gnome-python-desktop-2.26.0-X-src.tar.bz2
+  /usr/src/gnome-python-desktop-2.26.0-X.tar.bz2
+  /usr/src/python-bugbuddy-2.26.0-X.tar.bz2
+  /usr/src/python-evolution-2.26.0-X.tar.bz2
+  /usr/src/python-gnomeapplet-2.26.0-X.tar.bz2
+  /usr/src/python-gnomedesktop2-2.26.0-X.tar.bz2
+  /usr/src/python-gnomekeyring-2.26.0-X.tar.bz2
+  /usr/src/python-gnomeprint2-2.26.0-X.tar.bz2
+  /usr/src/python-gtksourceview-2.26.0-X.tar.bz2
+  /usr/src/python-gtop2-2.26.0-X.tar.bz2
+  /usr/src/python-mediaprofiles-2.26.0-X.tar.bz2
+  /usr/src/python-metacity-2.26.0-X.tar.bz2
+  /usr/src/python-rsvg2-2.26.0-X.tar.bz2
+  /usr/src/python-totem-plparser-2.26.0-X.tar.bz2
+  /usr/src/python-wnck-2.26.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -67,23 +68,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 2.24.1-1 -----
-Version bump.
-
------ version 2.24.0-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.22.0-1 -----
-Version bump for GNOME 2.22.
-
------ version 2.20.0-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.18.0-1 -----
-Version bump for GNOME 2.18, built with python-2.5.
-
------ version 2.16.0-1 -----
-Initial release for Cygwin.
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
