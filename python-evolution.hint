@@ -1,5 +1,5 @@
 category: Gnome Python
-requires: cygwin libebook1.2_9 libecal1.2_7 libedataserver1.2_11 libgcc1 libglib2.0_0 libgdk_pixbuf2.0_0 libpango1.0_0 python python-gobject2 python-gtk2
+requires: libebook1.2_9 libecal1.2_7 libedataserver1.2_11 libgcc1 libglib2.0_0 libgdk_pixbuf2.0_0 libpango1.0_0 python python-gobject2 python-gtk2
 external-source: gnome-python-desktop
 sdesc: "Python bindings for evolution-data-server"
 ldesc: "Python bindings for the evolution-data-server libraries"
