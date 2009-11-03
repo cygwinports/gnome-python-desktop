@@ -1,0 +1,6 @@
+category: Gnome Python
+requires: libevdocument1 libevview1 libgcc1 libglib2.0_0 libgtk2.0_0 python python-gobject2.0 python-gtk2.0
+external-source: gnome-python-desktop
+sdesc: "Python bindings for the Evince libraries"
+ldesc: "Python bindings for the GNOME Evince document viewer libraries"
+

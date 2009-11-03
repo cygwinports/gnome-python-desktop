@@ -1,0 +1,118 @@
+gnome-python-desktop
+------------------------------------------
+Python bindings for the GNOME Desktop Suite libraries
+
+Runtime requirements:
+  cygwin-1.7.0-62
+  libgcc1-4.3.4-1
+  libglib2.0_0-2.22.2-1
+  libgdk_pixbuf2.0_0-2.18.3-1
+  libgtk2.0_0-2.18.3-1
+  libpango1.0_0-1.26.0-1
+  python-2.5.4-10
+  python-gobject2.0-2.20.0-1
+  python-gtk2.0-2.16.0-1
+(python-bugbuddy)
+  bug-buddy-2.28.0-1
+(python-evolution)
+  libebook1.2_9-2.26.3-1
+  libecal1.2_7-2.26.3-1
+  libedataserver1.2_11-2.26.3-1
+  libical0-0.43-10
+(python-evince)
+  libevdocument1-2.28.1-1
+  libevview1-2.28.1-1
+(python-gnomeapplet)
+  libbonobo2_0-2.24.2-1
+  libbonoboui2_0-2.24.2-1
+  libgnomeui2_0-2.24.2-1
+  libpanel-applet2_0-2.28.0-1
+  python-bonobo2-2.28.0-1
+  python-gnome2-2.28.0-1
+(python-gnomedesktop2)
+  libgnome-desktop2_11-2.28.1-1
+(python-gnomekeyring)
+  libgnome-keyring0-2.28.1-1
+  libgnome2_0-2.28.0-1
+(python-gnomeprint)
+  libart_lgpl_2_2-2.3.20-10
+  libgnomecanvas2_0-2.26.0-1
+  libgnomeprint2.2_0-2.18.6-1
+  libgnomeprintui2.2_0-2.18.4-1
+  python-gnomecanvas2-2.28.0-1
+(python-gtksourceview)
+  libgtksourceview1.0_0-1.8.5-10
+(python-gtop2)
+  libgtop2.0_7-2.28.0-1
+(python-mediaprofiles)
+  libgconf2_4-2.28.0-1
+  libgnome-media-profiles0-2.28.1-1
+  python-gconf2-2.28.0-1
+(python-metacity)
+  metacity-2.28.0-1
+(python-rsvg2)
+  librsvg2_2-2.26.0-1
+(python-totem-plparser)
+  libtotem-plparser12-2.28.1-1
+(python-wnck)
+  libwnck1_22-2.28.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.11-1.11-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  libtool-2.2.7a-14
+  make-3.81-2
+  pkg-config-0.23b-10
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.pygtk.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/gnome-python-desktop/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnome-python-desktop-2.28.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gnome-python-desktop-2.28.0-X.cygport all
+
+This will create:
+  /usr/src/gnome-python-desktop-2.28.0-X-src.tar.bz2
+  /usr/src/gnome-python-desktop-2.28.0-X.tar.bz2
+  /usr/src/python-bugbuddy-2.28.0-X.tar.bz2
+  /usr/src/python-evince-2.28.0-X.tar.bz2
+  /usr/src/python-evolution-2.28.0-X.tar.bz2
+  /usr/src/python-gnomeapplet-2.28.0-X.tar.bz2
+  /usr/src/python-gnomedesktop2-2.28.0-X.tar.bz2
+  /usr/src/python-gnomekeyring-2.28.0-X.tar.bz2
+  /usr/src/python-gnomeprint2-2.28.0-X.tar.bz2
+  /usr/src/python-gtksourceview-2.28.0-X.tar.bz2
+  /usr/src/python-gtop2-2.28.0-X.tar.bz2
+  /usr/src/python-mediaprofiles-2.28.0-X.tar.bz2
+  /usr/src/python-metacity-2.28.0-X.tar.bz2
+  /usr/src/python-rsvg2-2.28.0-X.tar.bz2
+  /usr/src/python-totem-plparser-2.28.0-X.tar.bz2
+  /usr/src/python-wnck-2.28.0-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 2.28.0-1 -----
+Version bump for GNOME 2.28.
+
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

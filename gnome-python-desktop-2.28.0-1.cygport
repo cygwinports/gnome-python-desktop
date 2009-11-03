@@ -1,9 +1,9 @@
 inherit pygtk
 
 PKG_NAMES="${PN}"
-gnome_python_desktop_CONTENTS="usr/lib/pkgconfig/ usr/share/doc/${PN}/"
+gnome_python_desktop_CONTENTS="usr/lib/pkgconfig/ usr/share/doc/"
 
-for p in bugbuddy evolution gnomeapplet gnomedesktop gnomekeyring gnomeprint \
+for p in bugbuddy evince evolution gnomeapplet gnomedesktop gnomekeyring gnomeprint \
          gtksourceview gtop mediaprofiles metacity rsvg totem-plparser wnck
 do
 	case ${p} in
@@ -11,8 +11,7 @@ do
 		*)	p2="${p}" ;;
 	esac
 	PKG_NAMES+=" python-${p2}"
-	declare python_${p2/-/_}_CONTENTS="usr/share/doc/Cygwin/python-${p2}.README
-	                                   ${PYTHON_SITELIB#/}/gtk-2.0/${p%-*}*"
+	declare python_${p2/-/_}_CONTENTS="${PYTHON_SITELIB#/}/gtk-2.0/${p%-*}*"
 	case ${p} in
 		gnomeapplet)
 			declare python_${p2}_CONTENTS+=" ${PYTHON_SITELIB#/}/gtk-2.0/gnome/applet*" ;;
