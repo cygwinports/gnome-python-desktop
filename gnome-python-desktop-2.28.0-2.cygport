@@ -3,9 +3,10 @@ inherit pygtk
 PKG_NAMES="${PN}"
 gnome_python_desktop_CONTENTS="usr/lib/pkgconfig/ usr/share/doc/"
 
-for p in bugbuddy evince evolution gnomeapplet gnomedesktop gnomekeyring gnomeprint \
-         gtksourceview gtop mediaprofiles metacity rsvg totem-plparser wnck
+for p in bugbuddy evince evolution gnomedesktop gnomekeyring gnomeprint \
+         gtop mediaprofiles metacity rsvg totem-plparser wnck
 do
+	CYGCONF_ARGS+=" --enable-${p%-*}"
 	case ${p} in
 		gnomedesktop|gnomeprint|gtop|rsvg)	p2="${p}2" ;;
 		*)	p2="${p}" ;;
@@ -29,4 +30,7 @@ do
 	esac
 done
 
-CYGCONF_ARGS="--enable-metacity"
+for nop in braseroburn braseromedia gnomeapplet gtksourceview nautilusburn
+do
+	CYGCONF_ARGS+=" --disable-${nop}"
+done
