@@ -3,7 +3,7 @@ inherit pygtk
 PKG_NAMES="${PN}"
 gnome_python_desktop_CONTENTS="usr/lib/pkgconfig/ usr/share/doc/"
 
-for p in bugbuddy evince evolution gnomedesktop gnomekeyring gnomeprint \
+for p in bugbuddy evince evolution gnomedesktop gnomekeyring \
          gtop mediaprofiles metacity rsvg totem-plparser wnck
 do
 	CYGCONF_ARGS+=" --enable-${p%-*}"
@@ -30,7 +30,7 @@ do
 	esac
 done
 
-for nop in braseroburn braseromedia gnomeapplet gtksourceview nautilusburn
+for nop in braseroburn braseromedia gnomeapplet gnomeprint gtksourceview nautilusburn
 do
 	CYGCONF_ARGS+=" --disable-${nop}"
 done
