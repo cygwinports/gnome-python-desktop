@@ -1,5 +1,5 @@
 category: Python Gnome
-requires: libgcc1 libglib2.0_0 libtotem-plparser17 python python-gobject2.0
+requires: libglib2.0_0 libtotem-plparser17 python python-gobject2.0
 external-source: gnome-python-desktop
 sdesc: "Python Totem PLParser bindings"
 ldesc: "Python bindings for Totem's playlist parser library"
