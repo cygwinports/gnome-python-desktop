@@ -1,0 +1,26 @@
+inherit pygtk
+
+PKG_NAMES="${PN}"
+gnome_python_desktop_CONTENTS="usr/lib/pkgconfig/ usr/share/doc/"
+
+for p in evolution gnomekeyring gtop metacity rsvg totem-plparser wnck
+do
+	CYGCONF_ARGS+=" --enable-${p%-*}"
+	case ${p} in
+		gtop|rsvg)	p2="${p}2" ;;
+		*)	p2="${p}" ;;
+	esac
+	PKG_NAMES+=" python-${p2}"
+	declare python_${p2/-/_}_CONTENTS="${PYTHON_SITELIB#/}/gtk-2.0/${p%-*}*"
+	case ${p} in
+		gtop|rsvg|totem-plparser) ;;
+		evolution)	declare python_${p2}_CONTENTS+=" usr/share/pygtk/2.0/defs/ebook*" ;;
+		*)	declare python_${p2/-/_}_CONTENTS+=" usr/share/pygtk/2.0/defs/*${p#gnome}*" ;;
+	esac
+done
+
+for nop in braseroburn braseromedia bugbuddy evince gnomeapplet gnomedesktop \
+           gnomeprint gtksourceview mediaprofiles nautilusburn
+do
+	CYGCONF_ARGS+=" --disable-${nop}"
+done

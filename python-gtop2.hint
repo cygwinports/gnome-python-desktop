@@ -1,5 +1,5 @@
 category: Gnome Python
-requires: libglib2.0_0 libgtop2.0_7 python python-gobject2.0
+requires: libglib2.0_0 libgtop2.0_7 python python-gobject
 external-source: gnome-python-desktop
 sdesc: "Python bindings for Libgtop-2"
 ldesc: "Python bindings for Libgtop-2"

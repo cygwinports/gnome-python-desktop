@@ -1,6 +1,0 @@
-category: Gnome Python
-requires: python bug-buddy
-external-source: gnome-python-desktop
-sdesc: "Python bindings for the GNOME bug reporter"
-ldesc: "Python bindings for the GNOME bug reporter"
-

@@ -1,4 +1,4 @@
 category: Gnome Python
-requires: python-bugbuddy python-evince python-evolution python-gnomedesktop2 python-gnomekeyring python-gtop2 python-mediaprofiles python-rsvg2 python-totem-plparser python-wnck 
+requires: python-evolution python-gnomekeyring python-gtop2 python-metacity python-rsvg2 python-totem-plparser python-wnck
 sdesc: "Python GNOME Desktop bindings (meta-package)"
 ldesc: "Python bindings for GNOME Desktop libraries"
