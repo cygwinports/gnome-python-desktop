@@ -1,5 +1,8 @@
 inherit pygtk
 
+
+PATCH_URI="2.32.0-eds-bonobo.patch"
+
 PKG_NAMES="${PN}"
 gnome_python_desktop_CONTENTS="usr/lib/pkgconfig/ usr/share/doc/"
 
