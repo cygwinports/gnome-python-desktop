@@ -27,3 +27,5 @@ for nop in braseroburn braseromedia bugbuddy evince gnomeapplet gnomedesktop \
 do
 	CYGCONF_ARGS+=" --disable-${nop}"
 done
+
+KEEP_LA_FILES="none"
