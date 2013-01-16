@@ -1,4 +1,0 @@
-category: Gnome Python
-requires: python-evolution python-gnomekeyring python-gtop2 python-metacity python-rsvg2 python-totem-plparser python-wnck
-sdesc: "Python GNOME Desktop bindings (meta-package)"
-ldesc: "Python bindings for GNOME Desktop libraries"

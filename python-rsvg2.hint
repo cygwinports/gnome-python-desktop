@@ -1,5 +1,0 @@
-category: Gnome Python
-requires: libglib2.0_0 librsvg2_2 python python-gobject
-external-source: gnome-python-desktop
-sdesc: "Python bindings for LibRSVG-2"
-ldesc: "Python bindings for LibRSVG-2"

@@ -1,0 +1,49 @@
+inherit pygtk
+
+NAME="gnome-python-desktop"
+VERSION=2.32.0
+RELEASE=5
+CATEGORY="Python"
+SUMMARY="Python GNOME Desktop bindings"
+DESCRIPTION="Python bindings for GNOME Desktop libraries"
+
+PATCH_URI="2.32.0-totem-gnomevfs.patch"
+
+PKG_NAMES="${PN} python-gnomekeyring python-gtop2 python-rsvg2 python-totem-plparser python-wnck"
+gnome_python_desktop_CONTENTS="usr/lib/pkgconfig/ usr/share/doc/"
+python_gnomekeyring_SUMMARY="Python bindings for the GNOME Keyring library"
+python_gnomekeyring_REQUIRES="python-gobject"
+python_gnomekeyring_CONTENTS="${PYTHON_SITELIB#/}/gtk-2.0/gnomekeyring* usr/share/pygtk/2.0/defs/*keyring*"
+python_gtop2_SUMMARY="Python bindings for LibGTop"
+python_gtop2_REQUIRES="python-gobject"
+python_gtop2_CONTENTS="${PYTHON_SITELIB#/}/gtk-2.0/gtop*"
+python_rsvg2_SUMMARY="Python bindings for LibRSVG"
+python_rsvg2_REQUIRES="python-gobject"
+python_rsvg2_CONTENTS="${PYTHON_SITELIB#/}/gtk-2.0/rsvg*"
+python_totem_plparser_SUMMARY="Python Totem PLParser bindings"
+python_totem_plparser_REQUIRES="python-gobject"
+python_totem_plparser_CONTENTS="${PYTHON_SITELIB#/}/gtk-2.0/totem*"
+python_wnck_SUMMARY="Python bindings for the GNOME libwnck library"
+python_wnck_REQUIRES="python-gobject python-gtk2.0"
+python_wnck_CONTENTS="${PYTHON_SITELIB#/}/gtk-2.0/wnck* usr/share/pygtk/2.0/defs/*wnck*"
+
+CYGCONF_ARGS="
+	--disable-braseroburn
+	--disable-braseromedia
+	--disable-bugbuddy
+	--disable-evince
+	--disable-evolution
+	--disable-evolution_ecal
+	--disable-gnomeapplet
+	--disable-gnomedesktop
+	--enable-gnomekeyring
+	--disable-gnomeprint
+	--disable-gtksourceview
+	--enable-gtop
+	--disable-mediaprofiles
+	--disable-metacity
+	--disable-nautilusburn
+	--enable-rsvg
+	--enable-totem
+	--enable-wnck
+"
