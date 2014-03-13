@@ -2,7 +2,7 @@ inherit pygtk
 
 NAME="gnome-python-desktop"
 VERSION=2.32.0
-RELEASE=5
+RELEASE=6
 CATEGORY="Python"
 SUMMARY="Python GNOME Desktop bindings"
 DESCRIPTION="Python bindings for GNOME Desktop libraries"
